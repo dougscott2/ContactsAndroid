@@ -9,13 +9,12 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ListView;
 
-class MainActivity extends AppCompatActivity implements View.OnClickListener, AdapterView.OnItemLongClickListener{
+public class MainActivity extends AppCompatActivity implements View.OnClickListener, AdapterView.OnItemLongClickListener{
     ArrayAdapter<String> contacts;
     ListView listView;
     EditText nameField;
     EditText phoneField;
     Button addButton;
-
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -35,12 +34,14 @@ class MainActivity extends AppCompatActivity implements View.OnClickListener, Ad
 
     @Override
     public void onClick(View v) {
+
         String nameText = nameField.getText().toString();
         String phoneText = phoneField.getText().toString();
         String text = String.format("%s (%s)", nameText, phoneText);
         contacts.add(text);
         nameField.setText("");
         phoneField.setText("");
+
     }
 
 

@@ -21,14 +21,14 @@
             android:layout_height="wrap_content"
             android:id="@+id/nameField"
             android:layout_weight="0.42"
-            android:text="Name" />
+            android:hint="Name" />
 
         <EditText
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:id="@+id/phoneField"
             android:layout_weight="0.57"
-            android:text="Phone #" />
+            android:hint="Phone #" />
 
         <Button
             style="?android:attr/buttonStyleSmall"
