@@ -46,6 +46,8 @@ class MainActivity extends AppCompatActivity implements View.OnClickListener, Ad
 
     @Override
     public boolean onItemLongClick(AdapterView<?> parent, View view, int position, long id) {
-        return false;
+        String itemToRemove = contacts.getItem(position);
+        contacts.remove(itemToRemove);
+        return true;
     }
 }
